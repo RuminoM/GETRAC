@@ -238,14 +238,15 @@
   }
 
   .grid-6{
-    display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+    display:grid;grid-template-columns:repeat(5,1fr);gap:14px;
   }
-  @media(max-width:980px){.grid-6{grid-template-columns:repeat(2,1fr)}}
-  @media(max-width:600px){.grid-6{grid-template-columns:1fr}}
+  @media(max-width:1080px){.grid-6{grid-template-columns:repeat(3,1fr);gap:16px}}
+  @media(max-width:780px){.grid-6{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.grid-6{grid-template-columns:1fr}}
 
   .svc{
     position:relative;
-    aspect-ratio:5/6;
+    aspect-ratio:1/1;
     overflow:hidden;
     background:linear-gradient(180deg,var(--ink-2) 0%,#0C0E12 100%);
     border:1px solid var(--line-2);
@@ -269,20 +270,20 @@
   .svc-body{
     position:relative;z-index:2;
     width:100%;height:100%;
-    padding:28px;display:flex;flex-direction:column;justify-content:space-between;
-    gap:18px;
+    padding:20px;display:flex;flex-direction:column;justify-content:space-between;
+    gap:12px;
   }
   .svc-top{display:flex;justify-content:space-between;align-items:flex-start}
   .svc-num{
-    font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.24em;color:var(--paper-mute);
+    font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.22em;color:var(--paper-mute);
   }
   .svc-top .badge{
-    font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.24em;
+    font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:.22em;
     color:var(--paper-mute);text-transform:uppercase;
-    padding:5px 9px;border:1px solid var(--line-2);border-radius:999px;
+    padding:4px 8px;border:1px solid var(--line-2);border-radius:999px;
   }
   .svc-icon{
-    width:clamp(72px,9vw,104px);height:clamp(72px,9vw,104px);
+    width:clamp(56px,5.5vw,78px);height:clamp(56px,5.5vw,78px);
     display:grid;place-items:center;margin:auto;
     color:var(--amber);
     transition:transform .35s cubic-bezier(.16,.84,.32,1), color .25s;
@@ -291,27 +292,27 @@
     width:100%;height:100%;
     stroke:currentColor;stroke-width:1.4;
     fill:none;stroke-linecap:round;stroke-linejoin:round;
-    filter:drop-shadow(0 6px 14px rgba(242,193,46,.18));
+    filter:drop-shadow(0 5px 12px rgba(242,193,46,.18));
   }
-  .svc-bottom{display:flex;flex-direction:column;gap:18px}
+  .svc-bottom{display:flex;flex-direction:column;gap:12px}
   .svc h3{
     font-family:"Antonio",sans-serif;font-weight:500;text-transform:uppercase;
-    font-size:clamp(24px,2.2vw,32px);line-height:.98;letter-spacing:0;
+    font-size:clamp(17px,1.55vw,22px);line-height:1;letter-spacing:0;
     color:var(--paper);margin:0;
   }
   .svc h3 .am{color:var(--amber)}
   .svc-actions{
-    display:flex;gap:14px;align-items:center;
-    padding-top:14px;border-top:1px solid var(--line-2);
+    display:flex;gap:10px;align-items:center;
+    padding-top:10px;border-top:1px solid var(--line-2);
   }
   .svc-actions a{
-    font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;
+    font-family:"JetBrains Mono",monospace;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;
     color:var(--paper-dim);transition:color .2s;
-    display:inline-flex;align-items:center;gap:6px;
+    display:inline-flex;align-items:center;gap:5px;
   }
   .svc-actions a:hover{color:var(--amber)}
-  .svc-actions .sep{width:1px;height:10px;background:var(--line-2)}
-  .svc-actions a svg{width:12px;height:12px;stroke-width:1.6}
+  .svc-actions .sep{width:1px;height:9px;background:var(--line-2)}
+  .svc-actions a svg{width:11px;height:11px;stroke-width:1.6}
 
   /* ===================== HERO BADGE (24/7) ===================== */
   .hero-badge{
